@@ -5,6 +5,7 @@ const fs = require('fs')
 const app = express()
 app.set('view engine', 'hbs')
 
+const port = process.env.PORT || 3000;
 // app.use((req, res, next) => {
 //     if(req){
 //     res.render('mantain.hbs')
@@ -62,6 +63,6 @@ app.get('/bad', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port , () => {
     console.log('Server is up')
 })
