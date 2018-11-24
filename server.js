@@ -27,7 +27,7 @@ console.log(log)
  next()
 })
 
-
+var a = 2;
 
 hbs.registerPartials(__dirname + '/views/partials')
 
