@@ -20,12 +20,12 @@ app.use((req, res, next) => {
 const log = `${new Date().toString()}: ${req.method} ${req.url}`
 console.log(log)
 
-fs.appendFile('server.log', log + '\n', (err) => {
-    if(err) {
-        console.log(err)
-    }
-})
-next()
+// fs.appendFile('server.log', log + '\n', (err) => {
+//     if(err) {
+//         console.log(err)
+//     }
+// })
+ next()
 })
 
 
