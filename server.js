@@ -62,6 +62,15 @@ app.get('/bad', (req, res) => {
     })
 })
 
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs', {
+        heading: 'Project Page',
+        p1: 'learn Nodejs',
+        p2: 'learn Frontend',
+        p3: 'spend most your time on NODE'
+    })
+})
+
 app.listen(port , () => {
     console.log('Server is up')
 })
